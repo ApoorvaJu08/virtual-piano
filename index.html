@@ -23,14 +23,14 @@
                      <span>Name</span><input type="text" placeholder="Username" id="text3" /><br /><br />
                      <span>Email</span><input type="email" placeholder="test@acadview.com" id="text1" /><br /><br />
                      <span>Password</span><input type="password" placeholder="JavascriptRocks" id="text2" /><br /><br />
-                      <input id="go" type="button" value="Login"  onclick="javascript:validate()" />
+                      <input id="go" type="button" value="Login"  onclick="validate()">
                </form>
              </div>
            </section>
          </div><!--Wrapper-->
 
 
-           <div class="main ">
+           <div class="main hidden">
 
             <nav class="navbar navbar-default">
               <div class="container-fluid">
@@ -66,7 +66,7 @@
 </nav><!--/.navbar navbar-default-->
 
 <div class="row">
-<div class="col-md-3" id="col-3">
+<div class="col-md-3 col-xs-2" id="col-3">
 <ul class="nav nav-pills nav-stacked">
 <li role="presentation"><a href="#">Recently Played</a></li>
 <li role="presentation" ><a href="#">Songs</a></li>
@@ -78,14 +78,14 @@
 </ul>
 </div><!-- // End of col-md-3 div -->
 <!-- Grid for the playlist and the music player -->
-<div class="col-md-9" id="jumbo" >
+<div class="col-md-9 col-xs-10" id="jumbo" >
 
 <div class="jumbotron" >
 <h1>Songs</h1>
 <p><a class="btn btn-primary btn-lg" href="#" role="button">PLAY</a></p>
 </div>
 <section class="content">
-  <audio src="D:\Virtual Piano\songify-master\songify-master\song app\song.mp3"></audio>
+  <audio src="song.mp3"></audio>
 <table id="songs"><!--Table containing all songs details and playlist-->
   <thead class="list-headers">
     <td> Title </td>

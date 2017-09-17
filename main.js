@@ -3,7 +3,8 @@ function validate()
                            if(   document.getElementById("text1").value == "test@acadview.com"
                               && document.getElementById("text2").value == "JavascriptRocks"  && (document.getElementById("text3").value.length) >3 )
                            {
-                             $('.welcome-screen').addClass('hidden');
+                             $('.wrapper').addClass('hidden');
+                             $('.main').removeClass('hidden');
                                var name = $('#text3').val();
                                var message = "Welcome back, " + name;
                                $('.main .user-name').text(message);
@@ -68,15 +69,16 @@ function validate()
                            }
 
                            // Function to update the song time as song progresses
-                             function updateCurrentTime() {
-                               var song = document.querySelector('audio');
-                               var currentTime = Math.floor(song.currentTime);
-                               currentTime = fancyTimeFormat(currentTime);
-                               var duration = Math.floor(song.duration);
-                               duration = fancyTimeFormat(duration)
-                               $('.time-elapsed').text(currentTime);
-                               $('.song-duration').text(duration);
-                           }
+                           function updateCurrentTime() {
+                                var song = document.querySelector('audio');
+                                var currentTime = Math.floor(song.currentTime);
+                                currentTime = fancyTimeFormat(currentTime);
+                                var duration = Math.floor(song.duration);
+                                duration = fancyTimeFormat(duration)
+                                $('.time-elapsed').text(currentTime);
+                                $('.song-duration').text(duration);
+                              }
+
 
                            // Function to load the window when website loads for the very first time
                            window.onload = function() {
